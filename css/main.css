@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    line-height: 1.3;
+    font-family: 'Karla', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    padding: 0;
+
+    background: -webkit-linear-gradient(bottom, rgb(187, 187, 187) 0%, rgb(255, 255, 255) 100%) repeat scroll 0 0;
+
+}
+
+#welcome {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 350%;
+    vertical-align: top;
+}
+
+#date {
+    font-size: 250%;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#head {
+    position: absolute;
+    left: 0;
+    top: 10%;
+    padding: 0 20px;
+    width: 100%;
+    text-align: center;
+}
+
+#body {
+    position: absolute;
+    left: 0;
+    bottom: 5%;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+input[type=text] {
+    padding: 12px 10px;
+    border: none;
+    border-radius: 10px;
+    width: 70%;
+    font-family: 'Karla', sans-serif;
+    font-size: 110%;
+}
+
+form {
+    padding-top: 15px;
+}
+
+div.gauche {
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+    width: 15%;
+    margin: .1%;
+}
+
+div.gauche a {
+    font-size: 1.2em;
+    display: block;
+    padding-bottom: 20px;
+}
+
+div.gauche a.last {
+    padding-bottom: 0;
+}
+
+#trait {
+    border-right: 2px solid #000000;
+    margin-right: 10px;
+}
+
+div.droite {
+    text-align: right;
+    display: inline-block;
+    vertical-align: bottom;
+    width: 64%;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}

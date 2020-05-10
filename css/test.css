@@ -11,19 +11,19 @@ html, body {
     margin: 0;
     padding: 0;
 
-    background: #ffffff;
+    background: #121212;
     /*background: center url("https://cdna.artstation.com/p/assets/images/images/005/801/464/large/alena-aenami-s1k.jpg?1493858295");*/
 }
 
 a:link, a:visited {
     text-decoration: none;
-    color: black;
+    color: #ffffff;
     font-weight: bold;
 }
 
 a:hover {
-    color: #282b3c;
-    background-color: #f8f9fa;
+    color: #ffffff;
+    background-color: #1a1a1a;
 }
 
 main {
@@ -34,7 +34,7 @@ main {
 input[type=text] {
     padding: 12px 10px;
     border-radius: 15px;
-    border: 3px solid #ececec;
+    border: 3px solid #000000;
     background-color: transparent;
     width: 100%;
     font-size: 110%;
@@ -53,6 +53,7 @@ h1.welcome {
     font-weight: normal;
     font-size: 320%;
     width: 60%;
+	color: #ffffff;
 }
 
 section.col1,
@@ -82,7 +83,7 @@ a {
 }
 
 div.droite {
-    border: 3px solid #F4F5F6;
+    border: 3px solid #000000;
     width: 60%;
     border-radius: 15px;
     margin-top: 3%;
@@ -97,10 +98,11 @@ div.droite {
     bottom: 10px;
     margin: 0 auto 10px auto;
     width: 100%;
+	color: #ffffff;
 }
 
 section.col1 div {
-    border: 3px solid #F4F5F6;
+    border: 3px solid #000000;
     width: 80%;
     border-radius: 15px;
     margin-left: 10%;
@@ -126,7 +128,7 @@ img.selfhosted {
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
     background-color: transparent;
-    color: black;
+    color: #ffffff;
     font-size: 140%;
     font-weight: bold;
     cursor: pointer;
@@ -139,7 +141,7 @@ img.selfhosted {
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .collapsible:hover {
-    background-color: #F4F5F6;
+    background-color: #1a1a1a;
 }
 
 /* Style the collapsible content. Note: hidden by default */

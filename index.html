@@ -7,7 +7,6 @@
     <title>TheThomaas</title>
 
     <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js"></script><!--Date-->
-    <script src="./js/utilities.js"></script>
 
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -15,57 +14,18 @@
 <body>
 
 <main>
-    <section class="col1">
-        <h1 class="welcome">Bienvenue Thomas</h1>
-        <form method="get" action="https://google.com/search">
-            <input type="text" name="q" placeholder="Rechercher sur Google" autofocus autocomplete="off">
-        </form>
-        <div>
-            <a href="https://plex.thomhass.duckdns.org" id="first"><img src="img/plex.png" class="selfhosted" alt="Plex"/></a>
-            <a href="https://thomhass.duckdns.org/"><img src="img/hass.png" class="selfhosted"
-                                                         alt="Home Assistant"/></a>
-        </div>
-    </section><section class="col2">
-        <div class="droite">
-            <button class="collapsible">Reddit</button>
-            <div class="content">
-                <a href="https://www.reddit.com/r/Hue/new/">Hue</a>
-                <a href="https://www.reddit.com/r/startpages/new">Startpages</a>
-                <a href="https://www.reddit.com/r/homeassistant/new/">Home Assistant</a>
-                <a href="https://www.reddit.com/r/homeautomation/new/">Home Automation</a>
-            </div>
-            <a href="https://www.frandroid.com/">FrAndroid</a>
-            <a href="https://divtec.sharepoint.com/SitePages/Accueil.aspx">DIVTEC</a>
-            <a href="https://planning.divtec.ch/ept-mpt">Horaire</a>
-        </div>
-    </section>
-
+    <h1 class="welcome">Thomas</h1>
+        
     <div id="date">Unable to pull date data.</div>
+
+    <div class="my-projects">
+        <h2>My Projects</h2>
+        <ul>
+            <!-- Faire une grille de 4 de large avec une descritpion, une image, un lien et une description -->
+            <a href="https://thethomaas.net">TheThomaas.net</a>
+        </ul>
+    </div>
+
 </main>
-
-<script type="text/javascript">
-    let coll = document.getElementsByClassName("collapsible");
-
-    for (let i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function () {
-            this.classList.toggle("active");
-            let content = this.nextElementSibling;
-            if (content.style.display === "block") {
-                content.style.display = "none";
-            } else {
-                content.style.display = "block";
-            }
-
-            if (content.style.maxHeight) {
-                content.style.maxHeight = null;
-            } else {
-                content.style.maxHeight = content.scrollHeight + "px";
-            }
-        });
-    }
-</script>
-
 </body>
 </html>
-
-<!-- Original Code by : https://github.com/LvInSaNevL/homepage -->

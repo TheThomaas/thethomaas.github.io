@@ -42,9 +42,9 @@ h2 {
   
   display: inline-block;
   
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
-  text-align: center;
+  text-align: left;
   background-color: #f1f1f1;
   
 }
@@ -64,6 +64,7 @@ h2 {
 
 .project-name{
   padding: 10px;
+  padding-left: 0;
   text-decoration: none;
   font-weight: bold;
   color: black;

@@ -12,6 +12,13 @@ body, html {
   height: 95%;
 }
 
+.description {
+  margin-left: 12%;
+  margin-top: 0;
+  padding: 0 0 1% 1.5%;
+  font-size: 1.2em;
+}
+
 h1 {
   margin: 0;
 }
@@ -30,8 +37,10 @@ h1 {
 .my-projects {
   display: flex;
   width: 70%;
+  height: 120%;
   justify-content: flex-start;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 h2.my-projects {

@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+
+  --accent-color-dark: rgb(87, 3, 3);
+  --text-color: #e2e2e2;
+}
+
+body, html {
+  background:  #353535;
+  color: var(--text-color);
+  width: 100%;
+  height: 95%;
+}
+
+h1 {
+  margin: 0;
+}
+
+.content {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+
+  margin-top: 25px;
+}
+
+.my-projects {
+  display: flex;
+  width: 70%;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+h2.my-projects {
+  width: 45%;
+}
+
+.project-card {
+  width: 280px;
+  height: 360px;
+  border-radius: 15px;
+  padding: 1.5rem;
+  background: white;
+  position: relative;
+  display: flex;
+  transition: 0.4s ease-out;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 50px;
+  margin-right: 50px;
+}
+.project-card:hover {
+  -webkit-transform: translateY(20px);
+  transform: translateY(20px);
+}
+.project-card:hover:before {
+  opacity: 1;
+}
+.project-card:hover .project-info {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
+}
+.project-card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0;
+}
+.project-card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 15px;
+}
+.project-card iframe {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 15px;
+}
+.project-card .project-info {
+  position: relative;
+  z-index: 3;
+  color: var(--text-color);
+  opacity: 0;
+  -webkit-transform: translateY(30px);
+  transform: translateY(30px);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.project-card .project-info h2 {
+  margin: 0px;
+}
+.project-card .project-info p {
+  letter-spacing: 1px;
+  font-size: 15px;
+  margin-top: 8px;
+}
+.project-card .project-info a {
+  padding: 0.6rem;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  background: var(--text-color);
+  color: var(--accent-color-dark);
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  text-decoration: none;
+
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.project-card .project-info a:hover {
+  background: var(--accent-color-dark);
+  color: var(--text-color);
+}
+
+.footer {
+  background-color: #1d1d1d;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.footer p {
+  position: absolute;
+  bottom: 0;
+  left: 300px;
+  height: 60%;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  align-content: center;
+}
+
+.footer p a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.footer p a:hover {
+  color: #cacaca;
+}

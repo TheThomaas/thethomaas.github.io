@@ -1,74 +1,67 @@
 <!DOCTYPE html>
-<html lang="fr-FR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    
+    <title>My Projects | TheThomaas</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
-    <title>Nouvel Onglet</title>
-
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Karla" rel="stylesheet">
-    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js"></script><!--Date-->
-    <script src="./js/utilities.js"></script>
-
-    <link rel="stylesheet" href="css/normalize.css">
-    <!--<link rel="stylesheet" href="css/main.css">-->
-    <link rel="stylesheet" href="css/test.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-
-<main>
-    <section class="col1">
-        <h1 class="welcome">Bienvenue Thomas</h1>
-        <form method="get" action="https://google.com/search">
-            <input type="text" name="q" placeholder="Rechercher sur Google" autofocus autocomplete="off">
-        </form>
-        <div>
-            <a href="https://plex.thomhass.duckdns.org" id="first"><img src="img/plex.png" class="selfhosted" alt="Plex"/></a>
-            <a href="https://thomhass.duckdns.org/"><img src="img/hass.png" class="selfhosted"
-                                                         alt="Home Assistant"/></a>
-        </div>
-    </section><section class="col2">
-        <div class="droite">
-            <button class="collapsible">Reddit</button>
-            <div class="content">
-                <a href="https://www.reddit.com/r/Hue/new/">Hue</a>
-                <a href="https://www.reddit.com/r/startpages/new">Startpages</a>
-                <a href="https://www.reddit.com/r/homeassistant/new/">Home Assistant</a>
-                <a href="https://www.reddit.com/r/homeautomation/new/">Home Automation</a>
+    <h1>My Projects</h1>
+    
+    <div class="content">
+        <div class="my-projects">
+            <div class="project-card"><img src="https://images.unsplash.com/photo-1531594896955-305cf81269f1?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80"/>
+                <div class="project-info">
+                    <h2 class="project-name">Umbra</h2>
+                    <p class="project-description">A game launcher built with Electron</p>
+                    <br>
+                    <a href="https://github.com/TheThomaas/umbra-game-launcher">View Project</a>
+                </div>
             </div>
-            <a href="https://www.frandroid.com/">FrAndroid</a>
-            <a href="https://divtec.sharepoint.com/SitePages/Accueil.aspx">DIVTEC</a>
-            <a href="https://planning.divtec.ch/ept-mpt">Horaire</a>
+            <!-- <div class="project-card"><img src="https://images.unsplash.com/photo-1425342605259-25d80e320565?auto=format&amp;fit=crop&amp;w=750&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D"/>
+                <div class="project-info">
+                    <h2 class="project-name">Road</h2>
+                    <p class="project-description">Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+                    <a href="#">View Project</a>
+                </div>
+            </div>
+            <div class="project-card"><img src="https://images.unsplash.com/photo-1503249023995-51b0f3778ccf?auto=format&amp;fit=crop&amp;w=311&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D"/>
+                <div class="project-info">
+                    <h2 class="project-name">Protester</h2>
+                    <p class="project-description">Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+                    <a href="#">View Project</a>
+                </div>
+            </div>
+            <div class="project-card"><img src="https://images.unsplash.com/photo-1503249023995-51b0f3778ccf?auto=format&amp;fit=crop&amp;w=311&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D"/>
+                <div class="project-info">
+                    <h2 class="project-name">Protester</h2>
+                    <p class="project-description">Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+                    <a href="#">View Project</a>
+                </div>
+            </div>
+            <div class="project-card"><img src="https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&amp;fit=crop&amp;w=667&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D"/>
+                <div class="project-info">
+                    <h2 class="project-name">Mountain</h2>
+                    <p class="project-description">Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+                    <br>
+                    <a href="#">View Project</a>
+                </div>
+            </div> -->
         </div>
-    </section>
+    </div>
 
-    <div id="date">Unable to pull date data.</div>
-</main>
-
-<script type="text/javascript">
-    let coll = document.getElementsByClassName("collapsible");
-
-    for (let i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function () {
-            this.classList.toggle("active");
-            let content = this.nextElementSibling;
-            if (content.style.display === "block") {
-                content.style.display = "none";
-            } else {
-                content.style.display = "block";
-            }
-
-            if (content.style.maxHeight) {
-                content.style.maxHeight = null;
-            } else {
-                content.style.maxHeight = content.scrollHeight + "px";
-            }
-        });
-    }
-</script>
-
+    <div class="footer">
+        <p>© 2020 <a href="https://github.com/thethomaas">TheThomaas</a></p>
+    </div>
 </body>
 </html>
 
-<!-- Original Code by : https://github.com/LvInSaNevL/homepage -->
+
+<!-- Cards by : https://codepen.io/Gelsot/pen/xpGYyd -->

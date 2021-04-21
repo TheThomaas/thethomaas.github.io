@@ -1,2 +1,2 @@
-# CustomHomepage
-A simple custom homepage to standardize my browsers.
+# TheThomaas.github.io
+A page displaying all of my projects

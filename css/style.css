@@ -140,11 +140,20 @@ h1 {
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
   text-decoration: none;
+}
 
+.site-link {
+  position: absolute;
+  bottom: 55px;
+  right: 10px;
+}
+
+.view-project {
   position: absolute;
   bottom: 10px;
   right: 10px;
 }
+
 .project-card .project-info a:hover {
   background: var(--accent-color-dark);
   color: var(--text-color);

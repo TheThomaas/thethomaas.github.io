@@ -1,0 +1,19 @@
+{
+    "name": "Français",
+    "my_projects": "Mes Projets",
+    "my_projects_description": "Une liste de tous les projets que j'ai réalisé",
+    "personnal_projects": "Projets personnels",
+    "personnal_projects_description": "Tous les projets que j'ai fait pendant mon temps libre",
+    "school_projects": "Projets scolaires",
+    "school_projects_description": "Les projets que l'on a fait en cours",
+    "view_project": "Voir le Projet",
+    "site_link": "Voir le Site",
+    "umbra_description" : "Un lanceur de jeu fait avec Electron",
+    "qrcode_description" : "Un bookmarklet qui génère des QRCode, à l'aide de QRGen",
+    "cancre_sim_description" : "Un jeu fait pour les Portes Ouvertes 2020",
+    "sigfox_description" : "Des capteurs de température affichés sur un tableau de bord",
+    "snake_description" : "Un Snake fait en Java",
+    "ldap_description" : "Ajouter, voir et se connecter à des utilisateurs LDAP depuis un site",
+    "guess_who_title" : "Qui est-ce ?",
+    "guess_who_description" : "Un \"Qui est-ce ?\" fait en Python et avec des Lego Mindstorms"
+}

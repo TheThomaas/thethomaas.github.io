@@ -1,0 +1,19 @@
+{
+    "name": "English",
+    "my_projects": "My Projects",
+    "my_projects_description": "Here you can see all of my projects",
+    "personnal_projects": "Personnal projects",
+    "personnal_projects_description": "A list of the projects I do/did in my freetime",
+    "school_projects": "School projects",
+    "school_projects_description": "The projects we did at school",
+    "view_project": "View Project",
+    "site_link": "Site Link",
+    "umbra_description" : "A game launcher built with Electron",
+    "qrcode_description" : "A simple bookmarklet to generate QR codes, using QRGen",
+    "cancre_sim_description" : "A game made for the Portes Ouvertes 2020",
+    "sigfox_description" : "Temperature sensors connected to a dashboard",
+    "snake_description" : "A Snake made with Java",
+    "ldap_description" : "Add, view and connect to LDAP users on a website",
+    "guess_who_title" : "Guess who ?",
+    "guess_who_description" : "A \"Guess who ?\" game made with Python and Lego Mindstorms"
+}

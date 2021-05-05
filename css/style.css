@@ -22,6 +22,13 @@ body, html {
 h1 {
   margin: 0;
 }
+ul {
+  list-style: none;
+}
+
+li {
+  list-style-type: none;
+}
 
 .content .description {
   padding: 0;
@@ -189,13 +196,42 @@ h1 {
   align-content: center;
 }
 
-.footer p a {
+.footer a {
   text-decoration: none;
   color: var(--text-color);
 }
 
-.footer p a:hover {
+.footer a:hover {
   color: #cacaca;
+}
+
+.footer .languages {
+  position: absolute;
+  bottom: 0;
+  right: 300px;
+}
+
+.footer .languages li {
+  display: none;
+  margin-bottom: 1px;
+}
+
+.footer .languages a {
+  background: none repeat scroll 0 0 #4c4a49;
+  color: #a7a5a5;
+  display: block;
+  font-size: 0.85em;
+  padding: 10px 0;
+  text-align: center;
+  width: 60px;
+}
+.languages li a:hover {
+  background: none repeat scroll 0 0 #333;
+  border: medium none;
+  color: #a7a5a5;
+}
+.languages li.active {
+  display: block;
 }
 
 .spacer {

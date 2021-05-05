@@ -10,22 +10,26 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/main.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="translate.js"></script>
 </head>
 
 <body>
-    <h1>My Projects</h1>
+    <script>init();</script>
+    <h1 id="my_projects">My Projects</h1>
     
-    <p class="description">Here you can see all of my projects</p>
+    <p id="my_projects_description" class="description">Here you can see all of my projects</p>
 
     <div class="content">
-        <!-- <h2>Personnal projects</h2>
-        <p class="description">A list of the projects I do/did in my freetime</p>
+        <!-- <h2 id="personnal_projects">Personnal projects</h2>
+        <p id="personnal_projects_description" class="description">A list of the projects I do/did in my freetime</p>
         <div class="projects">
             <div class="my-projects">
                 <div class="project-card"><img src="https://images.unsplash.com/photo-1531594896955-305cf81269f1?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80"/>
                     <div class="project-info">
                         <h3 class="project-name">Umbra</h3>
-                        <p class="project-description">A game launcher built with Electron</p>
+                        <p id="umbra_description" class="project-description">A game launcher built with Electron</p>
                         <br>
                         <a href="https://github.com/TheThomaas/umbra-game-launcher" class="view-project">View Project</a>
                     </div>
@@ -33,7 +37,7 @@
                 <div class="project-card"><img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=566&q=80"/>
                     <div class="project-info">
                         <h3 class="project-name">QrCode</h3>
-                        <p class="project-description">A bookmarklet to generate QR codes, using QRGen</p>
+                        <p id="qrcode_description" class="project-description">A simple bookmarklet to generate QR codes, using QRGen</p>
                         <a href="https://github.com/TheThomaas/qrgen-bookmarklet" class="view-project">View Project</a>
                     </div>
                 </div>
@@ -47,14 +51,14 @@
                 <a href="#" class="view-project">View Project</a>
             </div>
         </div> -->
-        <h2>School projects</h2>
-        <p class="description">The projects we did at school</p>
+        <h2 id="school_projects">School projects</h2>
+        <p id="school_projects_description" class="description">The projects we did at school</p>
         <div class="projects">
             <div class="my-projects">
                 <div class="project-card" style="background-color: rgb(87, 3, 3);"><img src="https://raw.githubusercontent.com/divtec-cejef/2020-JCO-CancreSimulator/master/Docs/src/PO%202020%20CANCRE_SIMULATOR%20LOGO.png"/>
                     <div class="project-info">
                         <h3 class="project-name">Cancre Simulator</h3>
-                        <p class="project-description">A game made for the Portes Ouvertes 2020</p>
+                        <p id="cancre_sim_description" class="project-description">A game made for the Portes Ouvertes 2020</p>
                         <br>
                         <a href="https://github.com/divtec-cejef/2020-JCO-CancreSimulator" class="view-project">View Project</a>
                     </div>
@@ -62,7 +66,7 @@
                 <div class="project-card" style="background-color: rgb(80, 110, 207);"><img src="https://www.iconpacks.net/icons/2/free-thermometer-icon-1829-thumb.png"/>
                     <div class="project-info">
                         <h3 class="project-name">Sigfox Temperature</h3>
-                        <p class="project-description">Temperature sensors connected to a dashboard</p>
+                        <p id="sigfox_description" class="project-description">Temperature sensors connected to a dashboard</p>
                         <a href="https://amsttho.divtec.me/iot/" class="site-link">Site Link</a>
                         <a href="https://github.com/divtec-cejef/2021-MSC-IoT-Thomas-Amstutz" class="view-project">View Project</a>
                     </div>
@@ -70,21 +74,21 @@
                 <div class="project-card"><img src="https://handsontek.net/images/Teams/Snake/hero.png"/>
                     <div class="project-info">
                         <h3 class="project-name">Snake</h3>
-                        <p class="project-description">A Snake made with Java</p>
+                        <p id="snake_description" class="project-description">A Snake made with Java</p>
                         <a href="https://github.com/divtec-cejef/2020-JCO-SNAKE" class="view-project">View Project</a>
                     </div>
                 </div>
                 <div class="project-card"><img src="https://webdevolutions.blob.core.windows.net/blog/2021/03/Secure-LDAP-in-Active-Directory-Encrypt.png"/>
                     <div class="project-info">
                         <h3 class="project-name">LDAP</h3>
-                        <p class="project-description">Add, view and connect to LDAP users on a website</p>
+                        <p id="ldap_description" class="project-description">Add, view and connect to LDAP users on a website</p>
                         <a href="https://github.com/ThomasAmstutz/PHP-M159-LDAP" class="view-project">View Project</a>
                     </div>
                 </div>
                 <div class="project-card"><img src="https://images-na.ssl-images-amazon.com/images/I/91YMt1KWVFL._AC_SL1500_.jpg"/>
                     <div class="project-info">
-                        <h3 class="project-name">Guess who ?</h3>
-                        <p class="project-description">A "Guess who ?" game made with Python and Lego Mindstorms</p>
+                        <h3 id="guess_who_title" class="project-name">Guess who ?</h3>
+                        <p id="guess_who_description" class="project-description">A "Guess who ?" game made with Python and Lego Mindstorms</p>
                         <a href="https://github.com/divtec-cejef/2019-CCH-BrickPi7-Thomas-Mathieu" class="view-project">View Project</a>
                     </div>
                 </div>
@@ -94,6 +98,23 @@
     <div class="spacer"></div>
     <div class="footer">
         <p>© 2021 <a href="https://github.com/thethomaas">TheThomaas</a></p>
+
+        <ul class="languages">
+            <li><a href="." onclick="changeLanguage('fr')" class="non-selected-language">Français</a></li>
+            <li><a href="." onclick="changeLanguage('en')" class="non-selected-language">English</a></li>
+            <li class="active"><a href="." class="selected-language">English</a></li>
+        </ul>
     </div>
+    <script>
+        $(function () {
+            $el_languages = $('.languages');
+            $el_languages.hover(function () {
+                $el_languages.find('li').show();
+            }, function () {
+                $el_languages.find('li:not(.active)').hide();
+            });
+        });
+
+    </script>
 </body>
 </html>

@@ -71,16 +71,16 @@ li {
   margin-right: 50px;
 }
 
-.project-card:hover {
+.project-card:hover, .project-card:active {
   -webkit-transform: translateY(20px);
   transform: translateY(20px);
 }
 
-.project-card:hover:before {
+.project-card:hover:before, .project-card:active:before {
   opacity: 1;
 }
 
-.project-card:hover .project-info {
+.project-card:hover .project-info, .project-card:active .project-info {
   opacity: 1;
   -webkit-transform: translateY(0px);
   transform: translateY(0px);
@@ -171,7 +171,7 @@ li {
   right: 10px;
 }
 
-.project-card .project-info a:hover {
+.project-card .project-info a:hover, .project-card .project-info a:active {
   background: var(--accent-color-dark);
   color: var(--text-color);
 }
@@ -201,7 +201,7 @@ li {
   color: var(--text-color);
 }
 
-.footer a:hover {
+.footer a:hover, .footer a:active {
   color: #cacaca;
 }
 
@@ -216,7 +216,9 @@ li {
   margin-bottom: 1px;
 }
 
-.footer .languages a {
+.footer .languages a, .footer .languages p {
+  margin: 0;
+  padding: 0;
   background: none repeat scroll 0 0 #4c4a49;
   color: #a7a5a5;
   display: block;
@@ -224,8 +226,16 @@ li {
   padding: 10px 0;
   text-align: center;
   width: 60px;
+
+  position: initial;
+  bottom: initial;
+  left: initial;
+  height: initial;
+  align-content: initial;
 }
-.languages li a:hover {
+
+.languages li a:hover, .languages li a:active,
+.languages li p:hover, .languages li p:active {
   background: none repeat scroll 0 0 #333;
   border: medium none;
   color: #a7a5a5;

@@ -1,6 +1,9 @@
 let language;
 let userLang = (navigator.language || navigator.userLanguage).substr(0, 2);
 
+if (userLang !== "en" && userLang !== "fr")
+    userLang = "en";
+
 function getLanguage() {
     (localStorage.getItem('language') == null) ? setLanguage(userLang) : false;
     $.ajax({
